@@ -89,6 +89,7 @@ func main() {
 	_ = os.RemoveAll(OutDir)
 	util.DefaultRequire = false
 
+	// comment for testing gh pr create
 	schema := util.GenerateSchema(&config.Config{})
 	for _, path := range paths {
 		util.GenerateFromPath(schema, OutDir, path)
